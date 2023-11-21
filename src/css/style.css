@@ -1,48 +1,11 @@
-@import "../css/normalize.css";
-@import "../css/swiper.css";
-@import "../css/main.css";
-@import "../css/blocks/header.css";
-@import "../css/blocks/banner.css";
-@import "../css/blocks/new-products.css";
-@import "../css/blocks/reviews.css";
-
-.container,
-body {
-  box-sizing: border-box;
-}
-
-body {
-  padding: 0;
-  font-weight: 400;
-  font-family: "Open Sans", "Arial", sans-serif;
-  background-color: #f9fdff;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.container {
-  max-width: 1220px;
-  min-width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-}
-
-@media (max-width: 767px) {
-  .container {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .no-scroll {
-    overflow: hidden;
-  }
-}
+@import "normalize.css";
+@import "swiper.css";
+@import "main.css";
+@import "fonts.css";
+@import "blocks/buttons.css";
+@import "blocks/header.css";
+@import "blocks/banner.css";
+@import "blocks/new-products.css";
+@import "blocks/reviews.css";
+@import "blocks/last-chance.css";
+@import "blocks/footer.css";

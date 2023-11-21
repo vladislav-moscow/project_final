@@ -6,6 +6,10 @@
   /* Text */
   --text-color-primary: #303032;
   --text-color-secondary: #444348;
+
+  /* Buttons */
+	--button-background-dark: #303032;
+  --button-background-primary: #303032;
 }
 
 * {
@@ -16,13 +20,13 @@ body {
   margin: 0;
   padding: 0;
   font-weight: 400;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   background-color: var(--body-background);
 }
 
 h2 {
   color: var(--text-color-primary);
-  font-family: "Playfair Display", "Georgia", serif;
+  font-family: "Playfair Display", Georgia, serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;

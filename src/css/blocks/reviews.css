@@ -27,11 +27,9 @@
 .reviews__user-name {
   color: var(--text-color-secondary);
   text-align: center;
-  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 154.36%; /* 27.784px */
+  line-height: 154.358%; /* 27.784px */
 }
 
 .reviews__user-activity {
@@ -40,7 +38,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 154.36%;
+  line-height: 154.358%;
   margin-bottom: 20px;
 }
 
@@ -52,7 +50,7 @@
   font-size: 16px;
   font-style: italic;
   font-weight: 400;
-  line-height: 154.36%; /* 24.697px */
+  line-height: 154.358%; /* 24.697px */
 }
 
 .reviews__slider-pagination {
@@ -71,7 +69,7 @@
 }
 
 .reviews .swiper-button-prev::after {
-  content: url("../../img/arrow-left.svg");
+  content: url("/src/img/arrow-left.svg");
 }
 
 .reviews .swiper-button-prev,
@@ -81,10 +79,10 @@
 }
 
 .reviews .swiper-button-next::after {
-  content: url("../../img/arrow-right.svg");
+  content: url("/src/img/arrow-right.svg");
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .reviews {
     display: none;
   }
