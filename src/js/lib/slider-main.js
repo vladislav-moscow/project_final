@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 "use strict";
 
-function mainSlider() {
+export function mainSlider() {
   let mySwiper = "";
   const breakpoint = window.matchMedia("(max-width: 767px)");
   const breakpointChecker = function () {
@@ -45,5 +45,3 @@ function mainSlider() {
   breakpoint.addListener(breakpointChecker);
   breakpointChecker();
 }
-
-mainSlider();

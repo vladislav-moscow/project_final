@@ -25,7 +25,7 @@
   display: flex;
   gap: 7px;
   color: var(--button-background-primary);
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

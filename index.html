@@ -53,9 +53,15 @@
         </nav>
         <ul class="nav__btns nav__btns-header">
           <li class="nav__btns-item nav__btns-item--search">
-            <a href="#" aria-label="Поиск по сайту">
+            <input
+              id="inputSearch"
+              class="inpuut hidden"
+              type="text"
+              placeholder="поиск..."
+            />
+            <button id="search" href="#" aria-label="Поиск по сайту">
               <span class="visually-hidden">Поиск по сайту</span>
-            </a>
+            </button>
           </li>
           <li class="nav__btns-item nav__btns-item--cart">
             <a href="#" aria-label="Корзина">
@@ -439,18 +445,31 @@
         <div id="armchairs" class="last-chance__tab"></div>
       </section>
     </main>
-		<footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
           <div class="footer__logo">
-            <img src="src/img/logo.svg" width="20" height="20" alt="Логотип Callium" />
+            <img
+              src="src/img/logo.svg"
+              width="20"
+              height="20"
+              alt="Логотип Callium"
+            />
           </div>
           <div class="footer__contacts">
             <div class="footer__contact-item">
-              <a href="tel:+7-495-205-28-14"><img src="src/img/icon-phone.svg" alt="phone numer" />+7(495) 205-28-14</a>
+              <a href="tel:+7-495-205-28-14"
+                ><img src="src/img/icon-phone.svg" alt="phone numer" />+7(495)
+                205-28-14</a
+              >
             </div>
             <div class="footer__contact-item">
-              <a href="mailto:callium@gmail.com"><img src="src/img/icon-mail.svg" alt="mail"/>callium@gmail.com</a>
+              <a href="mailto:callium@gmail.com"
+                ><img
+                  src="src/img/icon-mail.svg"
+                  alt="mail"
+                />callium@gmail.com</a
+              >
             </div>
           </div>
           <div class="footer__menu">
@@ -469,15 +488,14 @@
           </div>
         </div>
         <div class="footer__line"></div>
-        <div class="footer__callium">© 2018 «Callium» — Сайт по продаже дизайнерской мебели. Все права защищены.</div>
+        <div class="footer__callium">
+          © 2018 «Callium» — Сайт по продаже дизайнерской мебели. Все права
+          защищены.
+        </div>
       </div>
     </footer>
 
     <script src="src/js/vendor/swiper.js"></script>
-    <script src="src/js/lib/slider-last.js"></script>
-    <script src="src/js/lib/slider-main.js"></script>
-    <script src="src/js/lib/reviews-slider.js"></script>
-    <script src="src/js/tabs/tabs.js"></script>
-    <script src="src/js/menu/burger-menu.js"></script>
+    <script type="module" src="src/js/script.js"></script>
   </body>
 </html>

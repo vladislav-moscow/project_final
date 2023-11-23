@@ -2,7 +2,7 @@
 /* eslint-disable no-undef */
 "use strict";
 
-function lastChance() {
+export function lastChance() {
   const swiper = new Swiper(".last-chance__slider", {
     slidesPerView: 1,
     spaceBetween: 16,
@@ -61,5 +61,3 @@ function lastChance() {
     },
   });
 }
-
-lastChance();
