@@ -174,11 +174,12 @@
 
 @media (max-width: 1023px) {
   .banner .swiper-slide {
-    background: linear-gradient(
-      to right,
-      var(--body-background) 66.1%,
-      var(--body-background-secondary) 62.1%
-    );
+    background:
+      linear-gradient(
+        to right,
+        var(--body-background) 66.1%,
+        var(--body-background-secondary) 62.1%
+      );
   }
 
   .banner .swiper-pagination {
@@ -220,11 +221,12 @@
 @media (max-width: 1023px) {
   .product__slider {
     min-height: auto;
-    background: linear-gradient(
-      to left,
-      var(--body-background-secondary) 28rem,
-      var(--body-background) 28rem
-    );
+    background:
+      linear-gradient(
+        to left,
+        var(--body-background-secondary) 28rem,
+        var(--body-background) 28rem
+      );
   }
 
   .product__slider .product__info {
@@ -293,11 +295,12 @@
     display: flex;
     width: 100%;
     height: 32.7rem;
-    background: linear-gradient(
-      to right,
-      var(--body-background) 64%,
-      var(--body-background-secondary) 64%
-    );
+    background:
+      linear-gradient(
+        to right,
+        var(--body-background) 64%,
+        var(--body-background-secondary) 64%
+      );
     overflow: hidden;
   }
 

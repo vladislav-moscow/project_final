@@ -115,9 +115,9 @@
   background-repeat: no-repeat;
   background-size: 2.4rem 2.7rem;
   background-position: center bottom;
-	border: none;
-	cursor: pointer;
-	background-color: inherit;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
 }
 
 .nav__btns-input {
