@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App</title>
+    <link
+      rel="preload"
+      href="src/fonts/open-sans.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="src/fonts/playfair-display.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="src/fonts/playfair-display-bold.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper container">
+        <div class="header__logo">
+          <a href="#">
+            <img
+              src="src/img/logo.svg"
+              width="20"
+              height="20"
+              alt="logo-icon"
+            />
+          </a>
+        </div>
+        <nav class="nav nav__closed header__nav nav__no-js">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#">мебель</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">освещение</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">текстиль</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="nav__btns nav__btns-header">
+          <li class="nav__btns-item nav__btns-item--search">
+            <input
+              id="inputSearch"
+              class="nav__btns-input hidden"
+              type="text"
+              placeholder="поиск..."
+            />
+            <button id="search" aria-label="Поиск по сайту">
+              <span class="visually-hidden">Поиск по сайту</span>
+            </button>
+          </li>
+          <li class="nav__btns-item nav__btns-item--cart">
+            <a href="#" aria-label="Корзина">
+              <span class="visually-hidden">Корзина</span>
+            </a>
+          </li>
+        </ul>
+        <button
+          class="nav__button nav__button-burger"
+          type="button"
+          aria-label="Показать/Скрыть меню"
+        ></button>
+      </div>
+    </header>
+    <main class="main">
+      <h1>Дизайнерская мебель "Callium"</h1>
+      <section class="banner container">
+        <div class="swiper-container banner__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product product__slider">
+                <div class="product__info">
+                  <h2>Дизайнерская мебель</h2>
+                  <h3>Кресло "Антиква"</h3>
+                  <p><span>$380</span>$240</p>
+                  <button class="product__button" type="button">Купить</button>
+                </div>
+                <div class="product__image">
+                  <img
+                    src="src/img/main-chair-desktop.jpg"
+                    srcset="src/img/main-chair-desktop@2x.jpg 2x"
+                    width="532"
+                    height="751"
+                    alt="Кресло Антиква"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product product__slider">
+                <div class="product__info">
+                  <h2>Дизайнерская мебель</h2>
+                  <h3>Кресло "Антиква"</h3>
+                  <p><span>$380</span>$240</p>
+                  <button class="product__button" type="button">Купить</button>
+                </div>
+                <div class="product__image">
+                  <img
+                    src="src/img/main-chair-desktop.jpg"
+                    srcset="src/img/main-chair-desktop@2x.jpg 2x"
+                    width="532"
+                    height="751"
+                    alt="Кресло Антиква"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product product__slider">
+                <div class="product__info">
+                  <h2>Дизайнерская мебель</h2>
+                  <h3>Кресло "Антиква"</h3>
+                  <p><span>$380</span>$240</p>
+                  <button class="product__button" type="button">Купить</button>
+                </div>
+                <div class="product__image">
+                  <img
+                    src="src/img/main-chair-desktop.jpg"
+                    srcset="src/img/main-chair-desktop@2x.jpg 2x"
+                    width="532"
+                    height="751"
+                    alt="Кресло Антиква"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product product__slider">
+                <div class="product__info">
+                  <h2>Дизайнерская мебель</h2>
+                  <h3>Кресло "Антиква"</h3>
+                  <p><span>$380</span>$240</p>
+                  <button class="product__button" type="button">Купить</button>
+                </div>
+                <div class="product__image">
+                  <img
+                    src="src/img/main-chair-desktop.jpg"
+                    srcset="src/img/main-chair-desktop@2x.jpg 2x"
+                    width="532"
+                    height="751"
+                    alt="Кресло Антиква"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar banner__slider-scrollbar"></div>
+          <div class="swiper-pagination banner__slider-pagination"></div>
+        </div>
+      </section>
+      <section class="new__products container">
+        <div class="new__products-grid">
+          <div class="new__products-header">
+            <h2>НОВИНКИ</h2>
+          </div>
+          <div class="new__products-item">
+            <a href="#">
+              <img
+                src="src/img/chair-twilight-desktop.jpg"
+                srcset="src/img/chair-twilight-desktop@2x.jpg 2x"
+                alt="chair-twilight-desktop"
+              />
+              <div class="new__products-item-name">Стул «Смеркается»</div>
+              <div class="new__products-item-price">$280</div>
+            </a>
+          </div>
+          <div class="new__products-item">
+            <a href="#">
+              <img
+                src="src/img/chandelier-desktop.jpg"
+                srcset="src/img/chandelier-desktop@2x.jpg 2x"
+                alt="chandelier-desktop"
+              />
+              <div class="new__products-item-name">Люстра «Облако»</div>
+              <div class="new__products-item-price">$250</div>
+            </a>
+          </div>
+          <div class="new__products-item new__products-item-colored">
+            <a href="#">
+              <img
+                src="src/img/table-cream-desktop.png"
+                srcset="src/img/table-cream-desktop@2x.png 2x"
+                alt="table-cream-desktop"
+              />
+              <div class="new__products-item-name">Стол «Крем брюле»</div>
+              <div class="new__products-item-price">$320</div>
+            </a>
+          </div>
+          <div class="new__products-item new__products-item-big">
+            <a href="#">
+              <img
+                src="src/img/chair-white-desktop.jpg"
+                srcset="src/img/chair-white-desktop@2x.jpg 2x"
+                alt="chair-white-desktop"
+              />
+              <div class="new__products-item-name">
+                Стул офисный «Белый шоколад»
+              </div>
+              <div class="new__products-item-price">$120</div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="reviews container">
+        <div class="swiper-container reviews__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="flex-column">
+                <img
+                  src="src/img/avatar.jpg"
+                  srcset="src/img/avatar@2x.jpg 2x"
+                  alt="avatar"
+                />
+                <div class="reviews__user-name">Елена Новикова</div>
+                <div class="reviews__user-activity">Студентка</div>
+                <div class="reviews__user-review">
+                  «Хочу поделиться своими впечатлениями по использованию дивана
+                  «Бродвей», заказывала в конце 2016 года. Держится великолепно.
+                  Спасибо, большое сотрудникам этого чудесного магазина.»
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex-column">
+                <img
+                  src="src/img/avatar.jpg"
+                  srcset="src/img/avatar@2x.jpg 2x"
+                  alt="avatar"
+                />
+                <div class="reviews__user-name">Елена Новикова</div>
+                <div class="reviews__user-activity">Студентка</div>
+                <div class="reviews__user-review">
+                  «Хочу поделиться своими впечатлениями по использованию дивана
+                  «Бродвей», заказывала в конце 2016 года. Держится великолепно.
+                  Спасибо, большое сотрудникам этого чудесного магазина.»
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex-column">
+                <img
+                  src="src/img/avatar.jpg"
+                  srcset="src/img/avatar@2x.jpg 2x"
+                  alt="avatar"
+                />
+                <div class="reviews__user-name">Елена Новикова</div>
+                <div class="reviews__user-activity">Студентка</div>
+                <div class="reviews__user-review">
+                  «Хочу поделиться своими впечатлениями по использованию дивана
+                  «Бродвей», заказывала в конце 2016 года. Держится великолепно.
+                  Спасибо, большое сотрудникам этого чудесного магазина.»
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex-column">
+                <img
+                  src="src/img/avatar.jpg"
+                  srcset="src/img/avatar@2x.jpg 2x"
+                  alt="avatar"
+                />
+                <div class="reviews__user-name">Елена Новикова</div>
+                <div class="reviews__user-activity">Студентка</div>
+                <div class="reviews__user-review">
+                  «Хочу поделиться своими впечатлениями по использованию дивана
+                  «Бродвей», заказывала в конце 2016 года. Держится великолепно.
+                  Спасибо, большое сотрудникам этого чудесного магазина.»
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination reviews__slider-pagination"></div>
+        </div>
+      </section>
+      <section class="last-chance container">
+        <div class="last-chance__header mt-73">
+          <h2>ПОСЛЕДНИЙ ШАНС</h2>
+        </div>
+        <div class="last-chance__tabs">
+          <div class="last-chance__tab-item active" data-id="chairs">
+            Стулья
+          </div>
+          <div class="last-chance__tab-item" data-id="sofas">Диваны</div>
+          <div class="last-chance__tab-item" data-id="armchairs">Кресла</div>
+        </div>
+        <div
+          id="chairs"
+          class="swiper-container last-chance__slider last-chance__tab-chairs last-chance__tab active"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="last-chance__item">
+                <a href="#">
+                  <div class="last-chance__item-name">Стул «Карамель»</div>
+                  <div class="last-chance__price">
+                    <span class="last-chance__new-price">$195</span>
+                    <span class="last-chance__old-price">$245</span>
+                  </div>
+                  <div class="last-chance__for-image">
+                    <img
+                      src="src/img/chair-caramel-desktop.png"
+                      alt="chair-caramel-desktop"
+                      srcset="src/img/chair-caramel-desktop@2x.png 2x"
+                    />
+                  </div>
+                </a>
+                <button type="button" class="button-buy">КУПИТЬ</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="last-chance__item">
+                <a href="#">
+                  <div class="last-chance__item-name">Стул «Облако»</div>
+                  <div class="last-chance__price">
+                    <span class="last-chance__new-price">$200</span>
+                    <span class="last-chance__old-price">$250</span>
+                  </div>
+                  <div class="last-chance__for-image">
+                    <img
+                      src="src/img/chair-cloud-desktop.jpg"
+                      alt="chair-cloud-desktop"
+                      srcset="src/img/chair-cloud-desktop@2x.jpg 2x"
+                    />
+                  </div>
+                </a>
+                <button type="button" class="button-buy">КУПИТЬ</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="last-chance__item">
+                <a href="#">
+                  <div class="last-chance__item-name">Стул «Сова»</div>
+                  <div class="last-chance__price">
+                    <span class="last-chance__new-price">$240</span>
+                    <span class="last-chance__old-price">$260</span>
+                  </div>
+                  <div class="last-chance__for-image">
+                    <img
+                      src="src/img/chair-owl-desktop.png"
+                      alt="chair-owl-desktop"
+                      srcset="src/img/chair-owl-desktop@2x.png 2x"
+                    />
+                  </div>
+                </a>
+                <button type="button" class="button-buy">КУПИТЬ</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="last-chance__item">
+                <a href="#">
+                  <div class="last-chance__item-name">Стул «Мая»</div>
+                  <div class="last-chance__price">
+                    <span class="last-chance__new-price">$280</span>
+                    <span class="last-chance__old-price">$330</span>
+                  </div>
+                  <div class="last-chance__for-image">
+                    <img
+                      src="src/img/chair-maya-desktop.jpg"
+                      alt="chair-maya-desktop"
+                      srcset="src/img/chair-maya-desktop@2x.jpg 2x"
+                    />
+                  </div>
+                </a>
+                <button type="button" class="button-buy">КУПИТЬ</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="last-chance__item">
+                <a href="#">
+                  <div class="last-chance__item-name">Стул «Месси»</div>
+                  <div class="last-chance__price">
+                    <span class="last-chance__new-price">$280</span>
+                    <span class="last-chance__old-price">$305</span>
+                  </div>
+                  <div class="last-chance__for-image">
+                    <img
+                      src="src/img/chair-messi-desktop.png"
+                      alt="chair-messi-desktop"
+                      srcset="src/img/chair-messi-desktop@2x.png 2x"
+                    />
+                  </div>
+                </a>
+                <button type="button" class="button-buy">КУПИТЬ</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="last-chance__item">
+                <a href="#">
+                  <div class="last-chance__item-name">Стул «Месси»</div>
+                  <div class="last-chance__price">
+                    <span class="last-chance__new-price">$280</span>
+                    <span class="last-chance__old-price">$305</span>
+                  </div>
+                  <div class="last-chance__for-image">
+                    <img
+                      src="src/img/chair-messi-desktop.png"
+                      alt="chair-messi-desktop"
+                      srcset="src/img/chair-messi-desktop@2x.png 2x"
+                    />
+                  </div>
+                </a>
+                <button type="button" class="button-buy">КУПИТЬ</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="last-chance__item">
+                <a href="#">
+                  <div class="last-chance__item-name">Стул «Месси»</div>
+                  <div class="last-chance__price">
+                    <span class="last-chance__new-price">$280</span>
+                    <span class="last-chance__old-price">$305</span>
+                  </div>
+                  <div class="last-chance__for-image">
+                    <img
+                      src="src/img/chair-messi-desktop.png"
+                      alt="chair-messi-desktop"
+                      srcset="src/img/chair-messi-desktop@2x.png 2x"
+                    />
+                  </div>
+                </a>
+                <button type="button" class="button-buy">КУПИТЬ</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar last-chance__slider-scrollbar"></div>
+          <div class="swiper-pagination last-chance__slider-pagination"></div>
+        </div>
+        <div id="sofas" class="last-chance__tab"></div>
+        <div id="armchairs" class="last-chance__tab"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__logo">
+            <img
+              src="src/img/logo.svg"
+              width="20"
+              height="20"
+              alt="Логотип Callium"
+            />
+          </div>
+          <div class="footer__contacts">
+            <div class="footer__contact-item">
+              <a href="tel:+7-495-205-28-14"
+                ><img src="src/img/icon-phone.svg" alt="phone numer" />+7(495)
+                205-28-14</a
+              >
+            </div>
+            <div class="footer__contact-item">
+              <a href="mailto:callium@gmail.com"
+                ><img
+                  src="src/img/icon-mail.svg"
+                  alt="mail"
+                />callium@gmail.com</a
+              >
+            </div>
+          </div>
+          <div class="footer__menu">
+            <div class="footer__menu-item">
+              <a href="#">ДОСТАВКА</a>
+            </div>
+            <div class="footer__menu-item">
+              <a href="#">ОПЛАТА</a>
+            </div>
+            <div class="footer__menu-item">
+              <a href="#">КОНТАКТЫ</a>
+            </div>
+            <div class="footer__menu-item">
+              <a href="#">ГАРАНТИИ</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__line"></div>
+        <div class="footer__callium">
+          © 2018 «Callium» — Сайт по продаже дизайнерской мебели. Все права
+          защищены.
+        </div>
+      </div>
+    </footer>
+
+    <script src="src/js/vendor/swiper.js"></script>
+    <script type="module" src="src/js/script.js"></script>
+  </body>
+</html>

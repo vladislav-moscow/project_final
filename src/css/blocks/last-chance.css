@@ -1,0 +1,166 @@
+.last-chance {
+  padding-bottom: 6.6rem;
+  position: relative;
+}
+
+.last-chance .last-chance__slider-pagination {
+  text-align: end;
+  top: auto;
+  bottom: 0.9rem;
+  right: 0;
+  width: auto;
+  height: auto;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+}
+
+.last-chance .swiper-scrollbar {
+  bottom: 2.1rem;
+  left: 0;
+  width: calc(100% - 6.4rem);
+  height: 0.2rem;
+  display: block;
+}
+
+.last-chance__for-image {
+  display: flex;
+  justify-content: end;
+  width: auto;
+  height: 25.5rem;
+  background-color: var(--body-background-light);
+}
+
+.last-chance::before {
+  position: absolute;
+  right: 54.5rem;
+  content: "";
+  width: 102.5rem;
+  height: 54.5rem;
+  z-index: -1;
+  background: var(--body-background-secondary);
+}
+
+.last-chance__header::after {
+  position: absolute;
+  content: "";
+  width: 9rem;
+  height: 0.4rem;
+  background-color: var(--button-background-dark);
+}
+
+.last-chance__slider {
+  padding-top: 2.5rem;
+}
+
+.last-chance__item {
+  border-top: 0.5rem solid var(--body-background-light);
+}
+
+.last-chance__item:hover {
+  border-top: 0.5rem solid var(--button-background-primary);
+}
+
+.last-chance__item-name {
+  padding: 3.1rem 2rem 0;
+  color: #000000;
+  font-size: 1.6rem;
+  background-color: var(--body-background-light);
+}
+
+.last-chance__price {
+  display: flex;
+  align-items: baseline;
+  gap: 1.1rem;
+  padding: 0 2rem;
+  background-color: var(--body-background-light);
+}
+
+.last-chance__new-price {
+  color: var(--text-color-primary);
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.last-chance__old-price {
+  color: #979798;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration-line: line-through;
+}
+
+.last-chance__item img {
+  background-color: var(--body-background-light);
+}
+
+.last-chance__item:hover img {
+  background-color: var(--body-background-light);
+}
+
+.last-chance__item button {
+  width: 100%;
+  color: transparent;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.last-chance__item:hover button {
+  color: var(--body-background-light);
+  background-color: var(--button-background-primary);
+  border: 0.1rem solid var(--button-background-primary);
+}
+
+.last-chance__item button:hover {
+  opacity: 0.8;
+}
+
+.last-chance__tabs {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: 25%;
+}
+
+.last-chance__tab-item {
+  color: rgb(0 0 0 / 40%);
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 153.89%;
+  cursor: pointer;
+}
+
+.last-chance__tab-item:hover {
+  color: var(--text-color-primary);
+}
+
+.last-chance__tab {
+  display: none;
+}
+
+.active {
+  display: flex;
+  color: var(--text-color-primary);
+}
+
+@media (max-width: 767px) {
+  .last-chance__item {
+    width: 100%;
+  }
+
+  .last-chance__tabs {
+    max-width: 100%;
+  }
+}
+
+@media (orientation: landscape) {
+  .last-chance__item {
+    padding-bottom: 3rem;
+  }
+}
+
+@media (orientation: portrait) {
+  .last-chance__item {
+    padding-bottom: 0;
+  }
+}
